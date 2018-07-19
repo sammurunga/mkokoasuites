@@ -1,0 +1,357 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: transparent;
+  padding: 4rem 0;
+}
+.navbar-default .navbar-header .navbar-brand {
+  color: #34495e;
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
+  color: #00E5EE;
+}
+.navbar-default .navbar-nav {
+  color: #888a8c;
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 14px;
+}
+.navbar-default .navbar-nav li {
+  margin-right: 2rem;
+}
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus, .navbar-default .navbar-nav li a:active {
+  color: #00E5EE;
+  text-decoration: none;
+}
+
+#banner {
+  background-image: url("../../images/1522917256-9833-kenya-houses-14.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  background-color: #b8cfdb;
+}
+#banner .intro {
+  padding: 16rem;
+  color: #ffffff;
+}
+#banner .intro h3 {
+  font-family: "Signika Negative", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+}
+#banner .intro a button {
+  margin-top: 2rem;
+}
+#banner .intro a .btn-primary {
+  border-radius: 6rem;
+  border: 2px solid #888a8c;
+  background-color: transparent;
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Signika Negative", sans-serif;
+}
+#banner .intro a .btn-primary:hover, #banner .intro a .btn-primary:focus, #banner .intro a .btn-primary:active {
+  border: 2px solid #00E5EE;
+}
+
+#sub_intro {
+  background-color: #ffffff;
+  padding: 6rem 0 6rem 0;
+}
+#sub_intro .header_sub_intro {
+  color: #34495e;
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+}
+#sub_intro hr {
+  border-bottom: 3px solid #00E5EE;
+  border-top: none;
+  width: 6rem;
+  margin-top: .25rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+#sub_intro .sub_intro {
+  margin-top: 2rem;
+  font-family: "Raleway", sans-serif;
+}
+
+#mission {
+  background-color: #dae2ea;
+  padding: 3rem 0 2rem 0;
+}
+#mission .mission_title {
+  margin-top: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  color: #34495e;
+  font-weight: 800;
+}
+#mission hr {
+  border-bottom: 3px solid #00E5EE;
+  border-top: none;
+  width: 6rem;
+  margin-top: .25rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+#mission .fa-quote-left, #mission .fa-quote-right {
+  color: #34495e;
+}
+#mission p {
+  padding: 1rem 0 2rem 0;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: .25rem;
+}
+
+#about {
+  padding: 9rem 0 9rem 0;
+  background-color: #eee;
+}
+#about .about_title {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  color: #34495e;
+  font-weight: 800;
+}
+#about hr {
+  border-bottom: 3px solid #00E5EE;
+  border-top: none;
+  width: 6rem;
+  margin-top: .25rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+#about hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+#about .about_body1, #about .about_body2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3rem;
+}
+
+#services {
+  background-image: url("../../images/glass_architecture.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #b8cfdb;
+  opacity: .9;
+}
+#services .fa-industry, #services .fa-building-o, #services .fa-road, #services .fa-tint, #services .fa-wrench, #services .fa-globe, #services .fa-bolt, #services .fa-signal {
+  border: 2px solid #00E5EE;
+  border-radius: 6rem;
+  padding: 3.5rem;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+#services .head_title {
+  color: #eee;
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+#services .services_hr {
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 6rem;
+}
+#services .services_hr hr {
+  border-bottom: 3px solid #00E5EE;
+  border-top: none;
+  width: 6rem;
+  margin-top: .25rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+#services .service_title {
+  color: #eee;
+  font-family: "Raleway", sans-serif;
+}
+#services hr {
+  border-bottom: 3px solid #00E5EE;
+  border-top: none;
+  width: 6rem;
+  margin-top: .25rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+#services hr {
+  margin-right: auto;
+  margin-left: auto;
+}
+#services .services_body {
+  color: #888a8c;
+  font-family: "Raleway", sans-serif;
+}
+
+#policy {
+  background-color: #dae2ea;
+  padding: 6rem 0 6rem 0;
+}
+#policy .policy_title, #policy #clients .clients_title, #clients #policy .clients_title {
+  color: #34495e;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+}
+#policy hr {
+  border-bottom: 3px solid #00E5EE;
+  border-top: none;
+  width: 6rem;
+  margin-top: .25rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+#policy .policy_body {
+  color: #888a8c;
+  font-family: "Raleway", sans-serif;
+}
+#policy a:hover, #policy a:focus, #policy a:active {
+  text-decoration: none;
+}
+#policy a button {
+  display: table;
+  margin: 2rem auto;
+}
+#policy a .btn-primary {
+  border-radius: 6rem;
+  border: 2px solid #888a8c;
+  background-color: transparent;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Signika Negative", sans-serif;
+  color: #ffffff;
+}
+#policy a .btn-primary:hover, #policy a .btn-primary:focus, #policy a .btn-primary:active {
+  border: 2px solid #00E5EE;
+}
+
+#clients {
+  padding: 4rem 0 2rem 0;
+}
+#clients hr {
+  border-bottom: 3px solid #00E5EE;
+  border-top: none;
+  width: 6rem;
+  margin-top: .25rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+#clients .carousel-indicators {
+  display: block;
+  visibility: hidden;
+}
+#clients .carousel-indicators li {
+  background-color: #888a8c;
+  margin-right: 1rem;
+}
+#clients .carousel-indicators li:hover, #clients .carousel-indicators li:focus, #clients .carousel-indicators li:active {
+  background-color: #00E5EE;
+}
+#clients .item {
+  padding-top: 4rem;
+}
+#clients ul {
+  list-style: none;
+}
+
+#contact {
+  background-color: #f5f6f7;
+  padding: 4rem 0 2rem 0;
+}
+#contact .contacts_title {
+  color: #34495e;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+}
+#contact hr {
+  border-bottom: 3px solid #00E5EE;
+  border-top: none;
+  width: 6rem;
+  margin-top: .25rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+#contact hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+#contact h3 {
+  color: #34495e;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+#contact p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+}
+#contact .lead {
+  font-weight: 600;
+}
+#contact .olead {
+  font-weight: 500;
+}
+#contact textarea {
+  height: 10rem;
+  max-height: 90%;
+  resize: none;
+}
+#contact .btn-danger {
+  background-color: transparent;
+  color: #888a8c;
+  border: 1px solid #d9534f;
+  border-radius: 4rem;
+}
+#contact .btn-danger:hover, #contact .btn-danger:focus, #contact .btn-danger:active {
+  color: #d9534f;
+}
+#contact .fa-check {
+  color: #d9534f;
+}
+
+#footer {
+  background-color: #495060;
+  padding: 2rem 0;
+}
+#footer .icon_header {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+#footer .icons {
+  margin-top: 1.5rem;
+  color: #ffffff;
+}
+#footer .fa {
+  margin-right: 2rem;
+}
+#footer .co_name {
+  color: #eee;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+}
+#footer hr {
+  border-bottom: 3px solid #00E5EE;
+  border-top: none;
+  width: 6rem;
+  margin-top: .25rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+#footer .copyright {
+  bottom: 0px;
+}

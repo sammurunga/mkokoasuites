@@ -1,0 +1,460 @@
+// global variables
+$white: #ffffff;
+$black: #000000;
+$grey: #eee;
+$bg-grey: #f5f6f7;
+$color: #888a8c;
+$bg-color: #dae2ea;
+$head-color: #34495e;
+$highlight: #00E5EE;
+$header-bg-color: rgba(0,0,0,0.1);
+$img-color: #b8cfdb;
+$submit-border-color: #d9534f;
+$hrElement: hr;
+
+@mixin hr-properties($arg1) {
+	hr {
+		border-bottom: 3px solid $arg1;
+		border-top: none;
+		width: 6rem;
+		margin-top: .25rem;
+		margin-bottom: 2rem;
+		display: block;
+	}
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.navbar-default {
+    background-color: $white;
+    border-color: transparent;
+    padding: 4rem 0;
+    
+    .navbar-header .navbar-brand {
+        color: $head-color;
+        font: {
+            family: "Raleway", Helvetica, sans-serif;
+            size: 2rem;
+            decoration: none;
+        }
+        &:hover,&:focus {
+            color: $highlight;
+        }
+    }
+
+    .navbar-nav {
+        color: $color;
+        font: {
+            family: "Raleway", Helvetica, sans-serif;
+            size: 14px;
+        }
+        li {
+            margin-right: 2rem;
+            
+            a {
+                &:hover,&:focus,&:active {
+                    color: $highlight;
+                    text-decoration: none;
+                        
+                }
+            }
+        }
+    }
+}
+
+//banner
+#banner {
+    background-image: url('../../images/ariel_construction.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    background-color: $img-color;
+    
+    .intro {
+        padding: 16rem;
+        color: $white;
+        h3 {
+            font: {
+                family: "Signika Negative", sans-serif;
+                size: 4rem;
+                weight: 600;
+            }
+        }
+        a {
+            button {
+                margin-top: 2rem;
+            }
+            .btn-primary {
+                border-radius: 6rem;
+                border: 2px solid $color;
+                background-color: transparent;
+                padding: 1.5rem 2rem;
+                font: {
+                    size: 2rem;
+                    weight: 400;
+                    family: "Signika Negative", sans-serif;
+                }
+                &:hover, &:focus, &:active {
+                    border: 2px solid $highlight;
+                }
+            }
+            
+        }
+        
+    }
+}
+
+//sub_intro
+#sub_intro {
+    background-color: $white;
+    padding: 6rem 0 6rem 0;
+    
+    .header_sub_intro {
+        color:$head-color;
+        font: {
+            family: "Raleway", sans-serif;
+            size: 3rem;
+            weight: 800;
+        }
+    }
+    
+        @include hr-properties($highlight);
+    
+    .sub_intro {
+        margin-top: 2rem;
+        font: {
+            family: "Raleway", sans-serif;
+        }
+    }
+}
+
+
+//mission 
+#mission {
+    background-color: $bg-color;
+    padding: 3rem 0 2rem 0;
+    
+    .mission_title {
+        margin-top: 2rem;
+        font: {
+            family: "Raleway", sans-serif;
+            size:3rem;
+            color: $head-color;
+            weight: 800;
+        }
+    }
+    
+    
+        @include hr-properties($highlight);
+    
+    
+    .fa-quote-left, .fa-quote-right {
+        color: $head-color;
+    }
+    
+    p {
+        padding: 1rem 0 2rem 0;
+        font: {
+            family: "Raleway", sans-serif;
+        }
+        letter-spacing: .25rem;
+    }
+}
+
+//about
+#about {
+    padding: 9rem 0 9rem 0;
+    background-color: $white;
+    
+    .about_title {
+        font: {
+            family: "Raleway", sans-serif;
+            size:3rem;
+            color: $head-color;
+            weight: 800;
+        }
+    }
+    
+    
+        @include hr-properties($highlight);
+    hr{
+        margin-right: 0;
+        margin-left: 0;
+    }
+        
+    
+    
+    .about_body1, .about_body2 {
+        font: {
+            family: "Raleway", sans-serif;
+            size: 1.3rem;
+        }
+    }
+}
+
+ //services
+#services {
+    background-image: url('../../images/glass_architecture.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: $img-color;
+    opacity: .9;
+   
+    
+   
+    
+    .fa-industry,.fa-building-o, .fa-road, .fa-tint, .fa-wrench, .fa-globe, .fa-bolt, .fa-signal, {
+        border: 2px solid $highlight;
+        border-radius: 6rem;
+        padding: 3.5rem;
+        font-size: 2.5rem;
+        color: $white;
+    }
+    
+    .head_title {
+        color: $grey;
+        font: {
+            size: 4rem;
+        }
+        margin-top: 2rem;
+
+    }
+    
+    .services_hr {
+    
+        @include hr-properties($highlight);
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 6rem;
+    }
+    
+    .service_title {
+        color: $grey;
+        font: {
+            family: "Raleway", sans-serif;
+        }
+        
+    }
+    
+    
+    
+        @include hr-properties($highlight);
+    hr{
+        margin-right: auto;
+        margin-left: auto;
+    }
+        
+    
+    
+    .services_body {
+        color: $color;
+        font: {
+            family: "Raleway", sans-serif;
+        }
+    }
+}
+
+
+
+//policy
+#policy {
+    background-color: $bg-color;
+    padding: 6rem 0 6rem 0;
+    
+    .policy_title {
+        color:$head-color;
+        font: {
+            family: "Raleway", sans-serif;
+            weight: 800;
+            size: 3rem;
+        }
+    }
+    
+
+        @include hr-properties($highlight);
+    
+    
+    .policy_body {
+        color: $color;
+        font-family: "Raleway", sans-serif;
+    }
+    
+    a {
+        
+        &:hover, &:focus, &:active {
+            text-decoration: none;
+        }
+        
+        button {
+            display: table;
+            margin: 2rem auto;
+        }
+        .btn-primary {
+                border-radius: 6rem;
+                border: 2px solid $color;
+                background-color: transparent;
+                padding: 1rem 2rem;
+                font: {
+                    size: 2rem;
+                    weight: 400;
+                    family: "Signika Negative", sans-serif;
+                }
+                color: $white;
+            
+            &:hover, &:focus, &:active {
+                border: 2px solid $highlight;
+            }
+                
+        }
+    }
+}
+
+
+//clients
+#clients {
+    padding: 4rem 0 2rem 0;
+   
+    .clients_title{
+        @extend .policy_title;
+    }
+    
+        @include hr-properties($highlight);
+    
+    .carousel-indicators {
+        display:block;
+        visibility: hidden;
+        li {
+            background-color: $color;
+            margin-right: 1rem;
+            &:hover,&:focus,&:active {
+                background-color: $highlight;
+            }
+            
+        }
+    }
+    
+    .item {
+        padding-top: 4rem;
+    }
+}
+
+
+//contacts
+#contact {
+	background-color: $bg-grey;
+	padding: 4rem 0 2rem 0;
+	
+	.contacts_title {
+		color:$head-color;
+        font: {
+            family: "Raleway", sans-serif;
+            weight: 800;
+            size: 3rem;
+        }
+	}
+	
+	 
+		@include hr-properties($highlight);
+		hr{
+        margin-right: 0;
+        margin-left: 0;
+    }
+		
+	h3 {
+		color: $head-color;
+		font: {
+			family: "Raleway", sans-serif;
+			size: 1.6rem;
+			weight: 800;
+		}
+	}
+	p {
+		font: {
+			family: "Raleway", sans-serif;
+			size:1.2rem;
+		}
+	}
+	
+	.lead {
+		font-weight: 600;
+	}
+	.olead {
+		font-weight: 500;
+	}
+	textarea {
+		height: 10rem;
+		max-height: 90%;
+		resize: none;
+	}
+	
+	.btn-danger {
+		background-color: transparent;
+		color: $color;
+		border:1px solid $submit-border-color;
+		border-radius: 4rem;
+		
+		&:hover, &:focus, &:active {
+			color: $submit-border-color;
+		}
+	}
+	
+	.fa-check {
+		color: $submit-border-color;
+	}
+	
+}
+ //footer
+#footer {
+	background-color:#495060;
+	padding: 2rem 0;
+	
+	.icon_header {
+		color:$white;
+		font: {
+			family: "Raleway", sans-serif;
+			size: 2rem;
+			weight: 600;
+		}
+	}
+	.icons {
+		margin-top: 1.5rem;
+		color: $white;
+	}
+	.fa {
+		margin-right: 2rem;
+	}
+	
+	.co_name {
+		color:$grey;
+        font: {
+            family: "Raleway", sans-serif;
+            weight: 800;
+            size: 3rem;
+        }
+	}
+	
+		@include hr-properties($highlight);
+	
+	.copyright {
+		bottom: 0px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
